@@ -18,7 +18,7 @@ typedef enum
 
 @interface WeatherBugClient : AFHTTPClient
 @property (nonatomic, strong) NSString *apiKey;
-+ (CHYWeatherBugClient *)sharedClient;
++ (WeatherBugClient *)sharedClient;
 - (void)liveWithLocation:(CLLocationCoordinate2D)location success:(void(^)(WeatherBugLive *weatherBugLive))success failure:(void(^)(NSError *error))failure;
 - (void)liveWithLocation:(CLLocationCoordinate2D)location unit:(TemperatureUnit)unit success:(void(^)(WeatherBugLive *weatherBugLive))success failure:(void(^)(NSError *error))failure;
 - (void)forecastWithLocation:(CLLocationCoordinate2D)location success:(void(^)(NSArray *forecasts))success failure:(void(^)(NSError *error))failure;

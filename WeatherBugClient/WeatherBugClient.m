@@ -14,7 +14,7 @@
 static NSString * const kAPIBaseURLString = @"http://i.wxbug.net/REST/";
 
 @implementation WeatherBugClient
-+ (CHYWeatherBugClient *)sharedClient
++ (WeatherBugClient *)sharedClient
 {
     static CHYWeatherBugClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
