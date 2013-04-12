@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
   s.platform      = :ios
   s.dependency 'AFNetworking'
   s.dependency 'XMLDictionary'
+  s.dependency 'JSONKit'
 end
